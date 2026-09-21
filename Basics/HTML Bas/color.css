@@ -1,0 +1,72 @@
+*{
+    font-family: monospace;
+}
+body{
+    background-color: lightgray;
+    margin: 0;
+    font-size: 15px;
+}
+.div{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+header{
+    height: 100vh;
+    color: white;
+    background-color: grey;
+}
+header h1{
+    color: white;
+    margin: 0;
+}
+h1{
+    font-size: 50px;
+    color: grey;
+}
+.button{
+    height: 40px;
+    width: 140px;
+    border:none ;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.button:hover{
+    color: white;
+    background-color: pink;
+}
+img{
+    height: 200px;
+}
+main{
+    padding: 20px;
+}
+section{
+    height: 100vh;
+    border: 1px solid navy;
+    border-radius: 20px;
+    margin-bottom: 15px;
+}
+.submit{
+    height: 40px;
+    width: 140px;
+    border:none ;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.submit:hover{
+    color: white;
+    background-color: green;
+}
+input{
+    border-radius: 5px;
+    border: 1px solid rgb(33, 29, 29);
+    height: 25px;
+}
+footer{
+    height: 100px;
+    background-color: black;
+    color: lightgrey;
+}
