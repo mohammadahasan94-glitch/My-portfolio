@@ -1,0 +1,141 @@
+*{
+    font-family: monospace;
+}
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;      /* middle of page vertically */
+  justify-content: flex-start; /* stays left */
+  padding-left: 0px;
+}
+.box {
+  text-align: center;
+}
+.div{
+  display: flex;
+  flex-direction: column; 
+  align-items: center;    
+  gap: 15px;              
+}
+header{
+    height: 100vh;
+    color: white;
+    background-color: grey;
+}
+header h1{
+    color: white;
+    margin: 0;
+}
+h1{
+    font-size: 50px;
+    color: grey;
+}
+html {
+  scroll-behavior: smooth;
+}
+.contact-form {
+  display: grid;
+  grid-template-columns: max-content 200px;
+  column-gap: 5px;
+  row-gap: 5px;
+  align-items: center;
+  text-align: end;
+}
+
+.contact-form span {
+  white-space: nowrap;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+}
+
+.contact-form textarea {
+  height: 80px;
+  resize: vertical;
+}
+.op{
+    display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.button {
+    height: 20px;
+    width: 120px;
+    font-size: 17px;
+    display: inline-block;
+    padding: 12px 20px;
+    background-color: lightgray;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+}
+.button:hover{
+    color: white;
+    background-color: pink;
+}
+img{
+    height: 200px;
+}
+ol {
+  display: inline-block;
+  text-align: left;
+  padding-left: 25px;
+  margin: 0 auto;
+}
+
+main{
+    padding: 20px;
+}
+section{
+    height: 100vh;
+    border: 1px solid navy;
+    border-radius: 20px;
+    margin-bottom: 15px;
+}
+.submit{
+    height: 40px;
+    width: 140px;
+    border:none ;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.submit:hover{
+    color: white;
+    background-color: green;
+}
+input{
+    border-radius: 5px;
+    border: 1px solid rgb(33, 29, 29);
+    height: 25px;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+.top-button {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  padding: 12px 16px;
+  background: lightgray;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-family: Arial, sans-serif;
+}
+
+.top-button:hover {
+  background: pink;
+}
+footer{
+    height: 100px;
+    background-color: black;
+    color: lightgrey;
+}
