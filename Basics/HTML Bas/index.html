@@ -1,77 +1,110 @@
-<!DOCTYPE html>
+<!DOCTYPE html>  
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="color.css">
 </head>
-<body>
-    <div class="box">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+<body id="top">
+    <div class="container py-4">
+
     <header>
         <h1 class="div">Welcome to My Portfolio</h1>
         <a href="#About" class="button">About</a>
         <a href="#Skills" class="button">Skills</a>
         <a href="#Projects" class="button">Projects</a>
         <a href="#Contact" class="button">Contact</a>
-    </header>
+</header>
+
     <main>
-        <section id="About">
+        <section id="About" class="py-5">
             <h1>Mohammad Ahsan Abbas</h1>
-            <img src="Myimg.jpg" alt="A photo of mine">
+            <img src="Myimg.jpg" alt="A photo of mine" class="img-fluid rounded-circle" style="max-width: 220px;">
             <p>I am a recent graduate from B.tech CSE(AI&ML) from Gayatri Vidhya Prishad College</p>
+
             <p>I am passionate web developer with focus on front-end</p>
             <p>I have learnt web development from <strong>Youtube</strong>.</p>
         </section>
-        <section id="Skills">
+        <section id="Skills" class="py-5">
             <h1>My Skills</h1>
-            <ol>
-                <li>Python Basics</li>
-                <li>HTML Basics</li>
-                <li>CSS Basics</li>
-                <li>JavaScript Basics</li>
-            </ol>
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    <ul class="list-group">
+                        <li class="list-group-item">Python Basics</li>
+                        <li class="list-group-item">HTML Basics</li>
+                        <li class="list-group-item">CSS Basics</li>
+                        <li class="list-group-item">JavaScript Basics</li>
+                    </ul>
+                </div>
+            </div>
         </section>
-        <section id="Projects">
+        <section id="Projects" class="py-5">
             <h1>My Projects</h1>
-            <table border="1">
-                <tr><th>Projects</th><th>Description</th></tr>
-                <tr><td>Credit Card Fraud Analysis Dashboard</td><td>I have built a Credit Card Fraud Analysis Dashboard as a intern project</td></tr>
-                <tr><td>Arogyavahini – Healthcare Management System (MERN Stack)</td><td>I have built a Application for a hospital management with a team of 4 for final year project</td></tr>
-                <tr><td>Object Detection System</td><td>I have built a Object Detection System, it mostly detects hand gestures</td></tr>
+            <div class="table-responsive">
+                <table class="table table-bordered table-striped">
+                <tr>
+                    <th>Projects</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td>Credit Card Fraud Analysis Dashboard</td>
+                    <td>I have built a Credit Card Fraud Analysis Dashboard as a intern project</td>
+                </tr>
+                <tr>
+                    <td>Arogyavahini – Healthcare Management System (MERN Stack)</td>
+                    <td>I have built a Application for a hospital management with a team of 4 for final year project</td>
+                </tr>
+                <tr>
+                    <td>Object Detection System</td>
+                    <td>I have built a Object Detection System, it mostly detects hand gestures</td>
+                </tr>
             </table>
+            </div>
         </section>
-        <section id="Contact">
+        <section id="Contact" class="py-5">
             <h1>Contact Me</h1>
             <p>Feel free to get in touch with me using the form below:</p>
-            <form class="contact-form">
+
+           <form class="contact-form">
                 <label for="name">Name:</label>
-                <input type="text" id="name">
+                <input type="text" id="name" class="form-control">
+
                 <label for="email">Email:</label>
-                <input type="email" id="email">
+                <input type="email" id="email" class="form-control">
+
                 <span>Choose your gender:</span>
                 <div class="op">
                     <input type="radio" id="male" name="gender" value="male">
                     <label for="male">Male</label>
+
                     <input type="radio" id="female" name="gender" value="female">
                     <label for="female">Female</label>
                 </div>
+
                 <span>Select your interest:</span>
                 <div class="op">
                     <input type="checkbox" id="coding" value="coding">
                     <label for="coding">Coding</label>
+
                     <input type="checkbox" id="reading" value="reading">
                     <label for="reading">Reading</label>
                 </div>
+
                 <label for="bio">Bio:</label>
-                <textarea id="bio" maxlength="200"></textarea>
+                <textarea id="bio" maxlength="200" class="form-control"></textarea>
+
                 <span></span>
-                <button type="submit" class="submit">Submit</button>
+                <button type="submit" class="btn btn-success">Submit</button>
             </form>
         </section>
     </main>
     <a href="#top" class="top-button">↑ Top</a>
-    <footer><p>@2026 My Portfolio</p></footer>
+    <footer>
+        <p>@2026 My Portfolio</p>
+    </footer>
     </div>
 </body>
-</html>
+</html> 
