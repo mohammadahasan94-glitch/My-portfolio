@@ -139,19 +139,68 @@ footer{
     color: lightgrey;
 }
 @media (max-width: 576px) {
-    header{
+    body {
+        overflow-x: hidden;
+    }
+
+    header {
         min-height: auto;
         padding: 60px 15px;
     }
+
+    .div,
     h1 {
         font-size: 32px;
     }
 
+    section {
+        min-height: auto;
+        padding: 30px 15px;
+    }
+
+    .portfolio-nav {
+        flex-wrap: wrap;
+    }
+
     .button {
-        display: block;
+        flex: 0 0 100%;
         width: 100%;
         height: auto;
-        margin: 10px 0;
+        margin: 0 0 10px;
         padding: 12px;
+    }
+
+    /* Fix the contact form */
+    .contact-form {
+        grid-template-columns: 1fr;
+        width: 100%;
+        text-align: left;
+        gap: 10px;
+    }
+
+    .contact-form input[type="text"],
+    .contact-form input[type="email"],
+    .contact-form textarea {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .op {
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    .submit {
+        width: 100%;
+    }
+
+    /* Keep the projects table readable */
+    table {
+        font-size: 13px;
+    }
+
+    th,
+    td {
+        padding: 8px;
     }
 }
