@@ -133,10 +133,15 @@ html {
 .top-button:hover {
   background: pink;
 }
-footer{
-    height: 100px;
+footer {
     background-color: black;
-    color: lightgrey;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+footer p {
+    margin: 0;
 }
 @media (max-width: 576px) {
     body {
